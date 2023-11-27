@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    background-color: #FFAFCC !important;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    width: 100%;
+    position: inline;
+  
+
+}
+
+.lista-nav {
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    background-color: #FFAFCC;
+    gap: 25px;
+    font-size: x-large;
+    align-items: center;
+    padding: 20px;
+    
+
+
+}
+
+.imagen-logo-nav {
+    width: 130px;
+    background-color: #FFAFCC;
+}
+
+.carrito-header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: bold;
+
+
+ 
+}
+
+.container-cart-icon {
+    position: absolute;
+    top:60px;
+    right: 45px;
+    width: 25px;
+
+}
+
+
+.numerito {
+
+    position: absolute;
+    top: 55%;
+    right: 7px;
+    background-color: white;
+    color: black;
+    width: 25px;
+    height: 25px;
+    opacity: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 20px;
+
+}

@@ -1,0 +1,18 @@
+.footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #FFAFCC  !important;
+    align-items: center;
+
+}
+
+.imagen-logo {
+    width: 150px;
+    background-color: #FFAFCC !important;
+    margin-left:70px;
+}
+
+li {
+    font-weight: bold;
+    cursor: pointer;
+}

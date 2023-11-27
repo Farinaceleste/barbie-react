@@ -1,0 +1,49 @@
+.card-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(169, 157, 180);
+    border-width: 2px;
+    width: 30%;
+    margin:20px;
+}
+
+.image-detail {
+    max-width: 250px;
+}
+
+span, h4 {
+    font-weight: bold;
+}
+
+.boton-volver{
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+
+    &:hover {
+        background-color: lightcoral;
+    }
+}
+
+.botones-detalle {
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+    justify-content: space-between;
+    
+
+}
+
+.boton-comprar {
+    text-decoration: none;
+    font-size: medium;
+
+    &:hover {
+        background-color: lightcoral;
+    }
+}

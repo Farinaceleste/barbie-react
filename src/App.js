@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+
+import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/Footer/Footer"
 import './App.css';
+import "bulma/css/bulma.css";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import ItemDetail from "./pages/ItemDetail/ItemDetail";
+import Contacto from "./pages/Contacto/Contacto";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <nav>{<NavBar/>}</nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route index element = {<Home/>}/>
+          <Route path="/productos" element={<ItemListContainer />} />
+          <Route path = "/contacto" element = {<Contacto/>}/>
+          <Route path = "productos/:productoId" element = {<ItemDetail/>}/>
+          
+        </Routes>
+        <footer>{<Footer />}</footer>
+      </BrowserRouter>
     </div>
-  );
-}
+  )
+};
 
 export default App;
