@@ -1,4 +1,4 @@
-
+import { ButtonList } from "./components/ButonList/ButonList";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer"
 import './App.css';
@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import ItemDetail from "./pages/ItemDetail/ItemDetail";
 import Contacto from "./pages/Contacto/Contacto";
+
+
 
 
 function App() {

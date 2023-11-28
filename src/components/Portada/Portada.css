@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&family=Poiret+One&display=swap');
+
 .portada {
     display: flex;
-    
     justify-content: center;
     align-content: center;
 }
@@ -9,8 +10,8 @@
     display:flex;
     flex-direction: column;
     color:#DA1884;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 70px;
     align-content: center;
     justify-content: center;
@@ -20,6 +21,7 @@
 
 .imagen-portada {
     width: 100%;
+    overflow: hidden;
 }
 
 .letra-logo {
@@ -54,19 +56,18 @@
     }
 }
 
-
-
 .imagen-card img {
   
         position: relative;
         width: 30%;
         height: auto; 
-        overflow: hidden;
-        
+        overflow: hidden; 
 }
 
 .texto-card {
     font-size: 50px;
     padding: 20px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }

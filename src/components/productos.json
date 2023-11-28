@@ -1,163 +1,189 @@
-
 [
-        {
-            "id": "barbie1",
-            "titulo": "Barbie Pelicula",
-            "imagen": "https://i.ibb.co/2P8WN32/barbie-pelicula-1.jpg",
-            "categoria": "barbie",
-            "precio": 50,
-            "count":0
+    {
+        "id": "barbie1",
+        "titulo": "Barbie Pelicula",
+        "imagen": "https://i.ibb.co/2P8WN32/barbie-pelicula-1.jpg",
+        "categoria": "barbie",
+        "precio": 50,
+        "count": 0,
+        "stock": 3
     },
-        {
-            "id": "barbie2",
-            "titulo": "Barbie Flex",
-            "imagen": "https://i.ibb.co/sKTRwd6/barbie-flexible-2.jpg",
-            "categoria": "barbie",
-            "precio": 48,
-            "count":0
+    {
+        "id": "barbie2",
+        "titulo": "Barbie Flex",
+        "imagen": "https://i.ibb.co/sKTRwd6/barbie-flexible-2.jpg",
+        "categoria": "barbie",
+        "precio": 48,
+        "count": 0,
+        "stock": 1
 
-        },
-        {
-            "id": "barbie3",
-            "titulo": "Barbie Pool",
-            "imagen": "https://i.ibb.co/z70vRmg/pileta-3.png",
-            "categoria": "barbie",
-            "precio": 78,
-            "count": 0
-        },
-        {
-            "id": "barbie4",
-            "titulo": "Barbie Pediatra",
-            "imagen": "https://i.ibb.co/GJT4VGk/pediatra-4.jpg",
-            "categoria": "barbie",
-            "precio": 65,
-            "count": 0
-        },
-        {
-            "id": "barbie5",
-            "titulo": "Barbie Película",
-            "imagen": "https://i.ibb.co/pdcmVCr/pelicula-5.jpg",
-            "categoria": "barbie",
-            "precio": 52,
-            "count": 0
-        },
-        {
-            "id": "barbie6",
-            "titulo": "Barbie Película",
-            "imagen": "https://i.ibb.co/CWvgfzf/rollers-6.jpg",
-            "categoria": "barbie",
-            "precio": 50,
-            "count": 0
-        },
-        {
-            "id": "barbie7",
-            "titulo": "Ken Playero",
-            "imagen": "https://i.ibb.co/dMbgD90/playero-7.jpg",
-            "categoria": "ken",
-            "precio": 86,
-            "count": 0
-        },
-        {
-            "id": "barbie8",
-            "titulo": "Barbie Food Truck",
-            "imagen": "https://i.ibb.co/DRm7zDx/food-track-8.jpg",
-            "categoria": "barbie",
-            "precio": 110,
-            "count": 0
-        },
-        {
-            "id": "barbie9",
-            "titulo": "Ken Surf",
-            "imagen": "https://i.ibb.co/q9Yb7Mq/ken-surf-9.jpg",
-            "categoria": "ken",
-            "precio": 65
-        },
-        {
-            "id": "barbie10",
-            "titulo": "Ken Vaquero",
-            "imagen": "https://i.ibb.co/55sZsYQ/ken-vaquero-10.jpg",
-            "categoria": "ken",
-            "precio": 66,
-            "count": 0
-        },
-        {
-            "id": "barbie11",
-            "titulo": "Barbie Fotógrafa",
-            "imagen": "https://i.ibb.co/RT5wQXg/fotografa-11.jpg",
-            "categoria": "barbie",
-            "precio": 88,
-            "count": 0
-        },
-        {
-            "id": "barbie12",
-            "titulo": "Ken",
-            "imagen": "https://i.ibb.co/kDtD1D4/ken-12.jpg",
-            "categoria": "ken",
-            "precio": 40,
-            "count": 0
-        },
-        {
-            "id": "barbie13",
-            "titulo": "Barbie Científica",
-            "imagen": "https://i.ibb.co/12hBRCr/cientifica-13.jpg",
-            "categoria": "barbie",
-            "precio": 70,
-            "count": 0
-        },
-        {
-            "id": "barbie14",
-            "titulo": "Barbie Movie",
-            "imagen": "https://i.ibb.co/CMqFg9z/pelicula-14.jpg",
-            "categoria":  "barbie",
-            "precio": 60,
-            "count": 0
-        },
-        {
-            "id": "barbie15",
-            "titulo": "Ken Fútbol",
-            "imagen": "https://i.ibb.co/3CX2d7S/futbol-15.jpg",
-            "categoria": "ken",
-            "precio": 75,
-            "count": 0
-        },
-        {
-            "id": "barbie16",
-            "titulo": "Barbie Movie",
-            "imagen": "https://i.ibb.co/T8f32ZX/pelicula-16.jpg",
-            "categoria": "barbie",
-            "precio": 50,
-            "count": 0
-        },
-        {
-            "id": "barbie17",
-            "titulo": "Ken Rock",
-            "imagen": "https://i.ibb.co/ckKh0Xr/rockero-17.jpg",
-            "categoria": "ken",
-            "precio": 100,
-            "count": 0
-        },
-        {
-            "id": "barbie18",
-            "titulo": "Barbie Deluxe",
-            "imagen": "https://i.ibb.co/TWFD1wm/deluxe-18.jpg",
-            "categoria": "barbie",
-            "precio": 250
-        },
-        {
-            "id": "barbie19",
-            "titulo": "Barbie Día de Spa",
-            "imagen": "https://i.ibb.co/WnMRSvm/spa-19.jpg",
-            "categoria":  "barbie",
-            "precio": 150,
-            "count": 0
-        },
-        {
-            "id": "barbie20",
-            "titulo": "Barbie Gimnasta",
-            "imagen": "https://i.ibb.co/3RyzCBs/gimnasta-20.jpg",
-            "categoria": "barbie",
-            "precio": 120,
-            "count": 0
-        }
+    },
+    {
+        "id": "barbie3",
+        "titulo": "Barbie Pool",
+        "imagen": "https://i.ibb.co/z70vRmg/pileta-3.png",
+        "categoria": "barbie",
+        "precio": 78,
+        "count": 0,
+        "stock": 2
+    },
+    {
+        "id": "barbie4",
+        "titulo": "Barbie Pediatra",
+        "imagen": "https://i.ibb.co/GJT4VGk/pediatra-4.jpg",
+        "categoria": "barbie",
+        "precio": 65,
+        "count": 0,
+        "stock": 0
+    },
+    {
+        "id": "barbie5",
+        "titulo": "Barbie Película",
+        "imagen": "https://i.ibb.co/pdcmVCr/pelicula-5.jpg",
+        "categoria": "barbie",
+        "precio": 52,
+        "count": 0,
+        "stock": 8
+    },
+    {
+        "id": "barbie6",
+        "titulo": "Barbie Película",
+        "imagen": "https://i.ibb.co/CWvgfzf/rollers-6.jpg",
+        "categoria": "barbie",
+        "precio": 50,
+        "count": 0,
+        "stock": 3
+    },
+    {
+        "id": "barbie7",
+        "titulo": "Ken Playero",
+        "imagen": "https://i.ibb.co/dMbgD90/playero-7.jpg",
+        "categoria": "ken",
+        "precio": 86,
+        "count": 0,
+        "stock": 5
+    },
+    {
+        "id": "barbie8",
+        "titulo": "Barbie Food Truck",
+        "imagen": "https://i.ibb.co/DRm7zDx/food-track-8.jpg",
+        "categoria": "barbie",
+        "precio": 110,
+        "count": 0,
+        "stock": 8
 
-    ]
+    },
+    {
+        "id": "barbie9",
+        "titulo": "Ken Surf",
+        "imagen": "https://i.ibb.co/q9Yb7Mq/ken-surf-9.jpg",
+        "categoria": "ken",
+        "precio": 65,
+        "count": 0,
+        "stock": 7
+
+    },
+    {
+        "id": "barbie10",
+        "titulo": "Ken Vaquero",
+        "imagen": "https://i.ibb.co/55sZsYQ/ken-vaquero-10.jpg",
+        "categoria": "ken",
+        "precio": 66,
+        "count": 0,
+        "stock": 4
+    },
+    {
+        "id": "barbie11",
+        "titulo": "Barbie Fotógrafa",
+        "imagen": "https://i.ibb.co/RT5wQXg/fotografa-11.jpg",
+        "categoria": "barbie",
+        "precio": 88,
+        "count": 0,
+        "stock": 10
+    },
+    {
+        "id": "barbie12",
+        "titulo": "Ken",
+        "imagen": "https://i.ibb.co/kDtD1D4/ken-12.jpg",
+        "categoria": "ken",
+        "precio": 40,
+        "count": 0,
+        "stock": 3
+
+    },
+    {
+        "id": "barbie13",
+        "titulo": "Barbie Científica",
+        "imagen": "https://i.ibb.co/12hBRCr/cientifica-13.jpg",
+        "categoria": "barbie",
+        "precio": 70,
+        "count": 0,
+        "stock": 4
+    },
+    {
+        "id": "barbie14",
+        "titulo": "Barbie Movie",
+        "imagen": "https://i.ibb.co/CMqFg9z/pelicula-14.jpg",
+        "categoria": "barbie",
+        "precio": 60,
+        "count": 0,
+        "stock": 6
+    },
+    {
+        "id": "barbie15",
+        "titulo": "Ken Fútbol",
+        "imagen": "https://i.ibb.co/3CX2d7S/futbol-15.jpg",
+        "categoria": "ken",
+        "precio": 75,
+        "count": 0,
+        "stock": 7
+    },
+    {
+        "id": "barbie16",
+        "titulo": "Barbie Movie",
+        "imagen": "https://i.ibb.co/T8f32ZX/pelicula-16.jpg",
+        "categoria": "barbie",
+        "precio": 50,
+        "count": 0,
+        "stock": 6
+    },
+    {
+        "id": "barbie17",
+        "titulo": "Ken Rock",
+        "imagen": "https://i.ibb.co/ckKh0Xr/rockero-17.jpg",
+        "categoria": "ken",
+        "precio": 100,
+        "count": 0,
+        "stock": 5
+
+    },
+    {
+        "id": "barbie18",
+        "titulo": "Barbie Deluxe",
+        "imagen": "https://i.ibb.co/TWFD1wm/deluxe-18.jpg",
+        "categoria": "barbie",
+        "precio": 250,
+        "stock": 3
+    },
+    {
+        "id": "barbie19",
+        "titulo": "Barbie Día de Spa",
+        "imagen": "https://i.ibb.co/WnMRSvm/spa-19.jpg",
+        "categoria": "barbie",
+        "precio": 150,
+        "count": 0,
+        "stock": 2
+    },
+    {
+        "id": "barbie20",
+        "titulo": "Barbie Gimnasta",
+        "imagen": "https://i.ibb.co/3RyzCBs/gimnasta-20.jpg",
+        "categoria": "barbie",
+        "precio": 120,
+        "count": 0,
+        "stock": 5
+    }
+
+]
+
+

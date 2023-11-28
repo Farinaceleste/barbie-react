@@ -1,6 +1,7 @@
 import Logo from "./logo.png";
 import "./Footer.css";
 
+
 function Footer() {
     return (
         <div>
@@ -40,6 +41,13 @@ function Footer() {
                             <li>Reclamos</li>
                         </ul>
                     </div>
+                    <div class="redes">
+                <a href="https://www.facebook.com/"><i className="bi bi-facebook fb"></i></a>
+                <a href="https://www.twitter.com/"><i className="bi bi-twitter tw"></i></a>
+                <a href="https://www.insagram.com/"><i className="bi bi-instagram ig"></i></a>
+                <a href="https://ar.pinterest.com/"><i class="bi bi-pinterest pi"></i></a>
+                <a href="https://www.linkedin.com/"><i className="bi bi-linkedin li"></i></a>
+            </div>
                 </div>
             </footer>
         </div>

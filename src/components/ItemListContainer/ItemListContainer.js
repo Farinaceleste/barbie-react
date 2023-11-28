@@ -1,8 +1,9 @@
 import "./ItemListContainer.css";
-import data from "../productos.json";
+import data from "../productos";
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getProducts, getProductsByCategory} from "../../asyncMock";
+import Swal from 'sweetalert2';
+
 
 function ItemListContainer() {
  let [productos, setProductos] = useState(data);
@@ -16,11 +17,17 @@ function ItemListContainer() {
  const handleClickSuma = (id) => {
     setProductos(productos.map(producto => {
       if (producto.id === id) {
-        return { ...producto, count: producto.count + 1 };
-      }
-      return producto;
-    }));
- }
+          if (producto.count < producto.stock){
+            return { ...producto, count: producto.count + 1 };
+          } else { Swal.fire("Stock agotado");
+            return producto;
+          }
+        } else {
+          return producto;
+        }
+      })
+   );
+  };
 
  const handleClickResta = (id) => {
     setProductos(productos.map(producto => {
@@ -33,23 +40,7 @@ function ItemListContainer() {
     }));
  }
 
-const {categoryId} = useParams ();
 
-const [products, setProducts] = useState([]);
-
-useEffect (() => {
-  const asyncFunc = categoryId ? getProductsByCategory : getProducts
-
-    asyncFunc(categoryId)
-      .then(response => {
-          setProducts (response)
-      })
-      .catch(error => {
-        console.log (error)
-
-        
-      })
-}, {categoryId})
 
  return (
     <div>
@@ -60,6 +51,7 @@ useEffect (() => {
           <ul>
             <li>Barbie</li>
             <li>Ken</li>
+            <li>TODOS</li>
           </ul>
         </div>
         {productos.map((producto, index) => {
@@ -69,17 +61,18 @@ useEffect (() => {
                 <img className="card-image" src={producto.imagen} alt={producto.titulo} />
                 <h4>{producto.titulo}</h4>
                 <div className="detalle-card">
-                 <p className="producto-precio">${producto.precio}</p>
+                 <p className="producto-precio">Precio: ${producto.precio}</p>
+                 <p>Stock disponible: {producto.stock}</p>
                    <div className="product-add">
                     <button onClick={() => handleClickResta(producto.id)} >-</button>
                     <p>{producto.count}</p>
                     <button onClick={() => handleClickSuma(producto.id)} >+</button>
                  </div>
-                 <button>Comprar</button>
+                 <button onClick={()=> Swal.fire("Gracias por su compra!")}>COMPRAR</button>
                  
                 </div>
                 <div className="mas-card">
-                <button onClick={() => handleSelectProduct(producto)}><Link to={`/productos/${producto.id}`}>Más detalles</Link></button>
+                <button className="boton-detalle" onClick={() => handleSelectProduct(producto)}><Link to={`/productos/${producto.id}`}>Más detalles</Link></button>
                 </div>
 
               </article>
@@ -90,6 +83,6 @@ useEffect (() => {
     </div >
  )
 }
-import { formToJSON } from "axios";
+
 
 export default ItemListContainer;

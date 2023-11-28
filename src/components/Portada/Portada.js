@@ -4,6 +4,7 @@ import FotoPortada from "./foto-portada.jpg";
 import Carduno from "./barbie7.jpg";
 import Carddos from "./barbie8.jpg";
 import Cardtres from "./barbie10.jpg";
+import { Link } from "react-router-dom";
 
 function Portada() {
     return (
@@ -20,15 +21,15 @@ function Portada() {
             <div className="cards-portada">
                 <div className="card">
                     <img className="imagen-card" src={Carduno}/>
-                    <p className="texto-card">TOP-RATED BARBIE GIFTS</p>
+                    <p className="texto-card"><Link to ="/productos">TOP-RATED BARBIE GIFTS</Link></p>
                 </div>
                 <div className="card">
                     <img className="imagen-card" src={Carddos}/>
-                    <p className="texto-card">THE FUTURE IS PINK</p>
+                    <p className="texto-card"><Link to ="/productos">THE FUTURE IS PINK</Link></p>
                 </div>
                 <div className="card">
                     <img className="imagen-card" src={Cardtres}/>
-                    <p className="texto-card">YOU CAN BE EVERYTHING</p>
+                    <p className="texto-card"><Link to ="/productos">YOU CAN BE EVERYTHING</Link></p>
                 </div>
             </div>
         </div>

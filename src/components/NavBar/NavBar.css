@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&family=Poiret+One&display=swap');
+
 .navbar {
     display: flex;
     background-color: #FFAFCC !important;
-    justify-content: center;
+    justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 6;
     width: 100%;
     position: inline;
+    padding: 25px;
   
 
 }
@@ -20,6 +23,7 @@
     font-size: x-large;
     align-items: center;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
     
 
 
@@ -28,6 +32,7 @@
 .imagen-logo-nav {
     width: 130px;
     background-color: #FFAFCC;
+   
 }
 
 .carrito-header {
