@@ -1,7 +1,7 @@
 import "./NavBar.css";
 import Logo from "./logo.png";
 import React from "react";
-import "bulma/css/bulma.css";
+// import "bulma/css/bulma.css";
 import Cart from "./cart.svg";
 import  {Link}  from "react-router-dom";
 
