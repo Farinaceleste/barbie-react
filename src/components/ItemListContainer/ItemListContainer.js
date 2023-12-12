@@ -1,88 +1,44 @@
 import "./ItemListContainer.css";
-import data from "../productos";
-import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Swal from 'sweetalert2';
+import { getProducts, getProductsByCategory } from "../productos";
+import ItemList from "../ItemList/ItemList";
 
+import { NavLink, useParams } from "react-router-dom";
 
-function ItemListContainer() {
- let [productos, setProductos] = useState(data);
- let [selectedProduct, setSelectedProduct] = useState(null);
+const ItemListContainer = ({ greeting }) => {
 
+  const [products, setProducts] = useState([])
 
- const handleSelectProduct = (producto) => {
-    setSelectedProduct (producto);
- }
+  const { categoryId } = useParams()
 
- const handleClickSuma = (id) => {
-    setProductos(productos.map(producto => {
-      if (producto.id === id) {
-          if (producto.count < producto.stock){
-            return { ...producto, count: producto.count + 1 };
-          } else { Swal.fire("Stock agotado");
-            return producto;
-          }
-        } else {
-          return producto;
-        }
+  useEffect(() => {
+    const asyncfunc = categoryId ? getProductsByCategory : getProducts
+    asyncfunc(categoryId)
+      .then(response => {
+        setProducts(response)
       })
-   );
-  };
-
- const handleClickResta = (id) => {
-    setProductos(productos.map(producto => {
-      if (producto.id === id) {
-        if (producto.count > 0) {
-          return { ...producto, count: producto.count - 1 };
-        }
-      }
-      return producto;
-    }));
- }
+      .catch(error => {
+        console.log(error)
+      })
+  }, [categoryId])
 
 
-
- return (
+  return (
     <div>
-      <div className="card-producto">
-        <div className="card-filtro">
-
-          <h3>Filtrar</h3>
-          <ul>
-            <li>Barbie</li>
-            <li>Ken</li>
-            <li>TODOS</li>
-          </ul>
-        </div>
-        {productos.map((producto, index) => {
-          return (
-            <div key={producto.id}>
-              <article >
-                <img className="card-image" src={producto.imagen} alt={producto.titulo} />
-                <h4>{producto.titulo}</h4>
-                <div className="detalle-card">
-                 <p className="producto-precio">Precio: ${producto.precio}</p>
-                 <p>Stock disponible: {producto.stock}</p>
-                   <div className="product-add">
-                    <button onClick={() => handleClickResta(producto.id)} >-</button>
-                    <p>{producto.count}</p>
-                    <button onClick={() => handleClickSuma(producto.id)} >+</button>
-                 </div>
-                 <button onClick={()=> Swal.fire("Gracias por su compra!")}>COMPRAR</button>
-                 
-                </div>
-                <div className="mas-card">
-                <button className="boton-detalle" onClick={() => handleSelectProduct(producto)}><Link to={`/productos/${producto.id}`}>Más detalles</Link></button>
-                </div>
-
-              </article>
-            </div>
-          )
-        })}
+      <h1>{greeting}</h1>
+      <div class="org-tienda">
+      <div className="Categorias">
+        <h1>Filtrar</h1>
+        <NavLink to={'/categoria/barbie'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Barbie</NavLink>
+        <NavLink to={'/categoria/ken'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ken</NavLink>
+        <NavLink to={'/categoria/todos'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ver todos</NavLink>
       </div>
-    </div >
- )
+      <ItemList products={products} />
+    </div>
+</div>
+  )
+
 }
 
-
 export default ItemListContainer;
+

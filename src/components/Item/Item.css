@@ -1,0 +1,35 @@
+.ItemImg {
+    width: 250px;
+}
+
+.ItemHeader {
+    font-size: medium;
+}
+
+.CardItem {
+    display: flex;
+   
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: #c3577e;
+    border-width: 2px;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    flex-direction: column;
+}
+
+.card-item {
+    display:flex;
+    gap:15px;
+    padding: 10px;
+   
+}
+
+.Itemfooter {
+    border-radius: 20%;
+    width: 50%;
+    padding: 5px;
+
+}

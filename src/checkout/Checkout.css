@@ -1,0 +1,33 @@
+.card-checkout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(249, 235, 243);
+    padding: 15px;
+    margin-right:20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+.botones-izquierda {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top:20px;
+    align-items: center;
+    
+}
+
+.botones-derecha {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    align-items: center;
+    
+   
+}
+

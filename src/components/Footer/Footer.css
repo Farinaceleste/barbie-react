@@ -1,16 +1,17 @@
 .footer {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #FFAFCC  !important;
+    background-color: white;
     align-items: center;
 
 }
 
-.imagen-logo {
+.imagen-logo{
     width: 150px;
-    background-color: #FFAFCC !important;
+    background-color: transparent;
     margin-left:70px;
 }
+
 
 li {
     font-weight: bold;

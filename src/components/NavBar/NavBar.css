@@ -2,7 +2,7 @@
 
 .navbar {
     display: flex;
-    background-color: #FFAFCC !important;
+    background-color: transparent !important;
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -11,27 +11,25 @@
     position: inline;
     padding: 25px;
   
-
 }
 
 .lista-nav {
     display: flex;
     font-weight: bold;
-    justify-content: center;
-    background-color: #FFAFCC;
+    top:10% !important;
+    background-color: transparent;
     gap: 25px;
     font-size: x-large;
     align-items: center;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
     
-
-
 }
+
 
 .imagen-logo-nav {
     width: 130px;
-    background-color: #FFAFCC;
+    background-color: transparent;
    
 }
 
@@ -42,16 +40,19 @@
     gap: 10px;
     cursor: pointer;
     font-weight: bold;
+    color:#DA1884;
 
 
- 
 }
 
 .container-cart-icon {
-    position: absolute;
+    
     top:60px;
     right: 45px;
     width: 25px;
+    color:#DA1884;
+    cursor: pointer;
+    
 
 }
 
@@ -61,7 +62,7 @@
     position: absolute;
     top: 55%;
     right: 7px;
-    background-color: white;
+    background-color: #DA1884;
     color: black;
     width: 25px;
     height: 25px;
@@ -71,5 +72,23 @@
     align-items: center;
     border-radius: 50%;
     margin-right: 20px;
+    font-size: 15px;
 
 }
+
+.portada-foto {
+    display: flex;
+    justify-content: baseline;
+}
+
+.iconos-header {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    gap:15px;
+    align-items: center;
+    
+}
+
+
+

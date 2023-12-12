@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&family=Poiret+One&display=swap');
 
+
 .portada {
     display: flex;
     justify-content: center;
     align-content: center;
+ 
+   
+
 }
 
 .texto-portada {
@@ -21,7 +25,8 @@
 
 .imagen-portada {
     width: 100%;
-    overflow: hidden;
+    overflow:visible;
+    background-color: transparent;
 }
 
 .letra-logo {
@@ -59,7 +64,7 @@
 .imagen-card img {
   
         position: relative;
-        width: 30%;
+        width: 20%;
         height: auto; 
         overflow: hidden; 
 }

@@ -1,0 +1,24 @@
+.ItemImg {
+    width: 250px;
+}
+
+.CardItem2 {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    border-color: #c3577e;
+    border-width: 2px;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    flex-direction: column;
+    width: 30%;
+  
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
