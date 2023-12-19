@@ -4,7 +4,7 @@
 
 .CardItem2 {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     padding: 20px;
     border-radius: 30px;
     border-color: #c3577e;
@@ -21,4 +21,15 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+}
+
+.Counter{
+    display: flex;
+    background-color: beige;
+
+}
+
+.info {
+    gap: 25px;
+    
 }

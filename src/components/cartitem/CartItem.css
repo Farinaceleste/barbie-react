@@ -1,0 +1,28 @@
+.checkout-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+
+.org-cart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+   
+}
+
+.titulos-cart {
+    font-weight: bold;
+    padding: 20px;
+}
+
+.imagen-cartitem {
+    width: 180px;
+    
+}

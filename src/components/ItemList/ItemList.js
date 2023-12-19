@@ -1,10 +1,16 @@
 import "./ItemList.css";
 import Item from "../Item/Item";
 
-const ItemList = ({products}) => {
+const ItemList = ({items, handleAddToWishlist }) => {
+
+    if (!items) {
+        return <h1>Loading...</h1>;
+    }
+
+
     return (
         <div className="ListGroup">
-            {products.map(prod => <Item key={prod.id} {...prod} />)}
+            {items.map(prod => <Item key={prod.id} {...prod} handleAddToWishlist={handleAddToWishlist} />)}
         </div>
     )
 }

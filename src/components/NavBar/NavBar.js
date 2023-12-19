@@ -2,31 +2,39 @@ import "./NavBar.css";
 import Logo from "./logo.png";
 import React from "react";
 import "bulma/css/bulma.css";
-import Cart from "./cart.svg";
+
 import { Link } from "react-router-dom";
 import Heart from "./heart.svg";
 import UserPhoto from "./user.svg";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import CartWidget from "../CartWidget/CartWidget";
+
+
+
 
 function NavBar() {
+
+    const { totalQuantity } = useContext(CartContext)
+    const result = totalQuantity;
 
     return (
         <div>
             <nav className="navbar">
                 <div className="imagen-logo-nav">
-                    <a href="./"><img src={Logo} /></a>
+                    <a href="./"><img src={Logo} alt="logo" /></a>
                 </div>
                 <ul className="lista-nav">
-                    <li> <Link to="./">Home</Link></li>
-                    <li> <Link to="/producto:productoId">Tienda</Link></li>
-                    <li> <Link to="/contacto">Contacto</Link></li>
+                    <li> <Link to="./" className="item-navbar">Home</Link></li>
+                    <li> <Link to="/producto:productoId" className="item-navbar">Tienda</Link></li>
+                    <li> <Link to="/contacto" className="item-navbar">Contacto</Link></li>
                 </ul>
                 <div className="iconos-header">
 
-                    <img className="container-cart-icon" src={Heart} alt="heart" />
-                    <a href="/user" className="heart-icon"><img className="container-cart-icon" src={UserPhoto} alt="user" /></a>
+                    <a href="/wishlist"><img className="container-cart-icon" src={Heart} alt="cart" /></a>
+                    <a href="/auth" ><img className="container-cart-icon" src={UserPhoto} alt="user" /></a>
                     <div className="container-cart-icon">
-                        <a href="/checkout" className="cart-icon"><img src={Cart} alt="cart"/></a>
-                        <span id="contador-productos" className="numerito">0</span>
+                      <CartWidget/>
                     </div>
 
                 </div>

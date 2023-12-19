@@ -29,7 +29,7 @@
 
 .imagen-logo-nav {
     width: 130px;
-    background-color: transparent;
+   
    
 }
 
@@ -53,16 +53,15 @@
     color:#DA1884;
     cursor: pointer;
     
-
 }
 
 
 .numerito {
 
     position: absolute;
-    top: 55%;
+    top: 51%;
     right: 7px;
-    background-color: #DA1884;
+    background-color: #ebb3d2;
     color: black;
     width: 25px;
     height: 25px;
@@ -88,6 +87,14 @@
     gap:15px;
     align-items: center;
     
+}
+
+.item-navbar {
+    color:#DA1884;
+}
+
+.CartImg {
+    color:black;
 }
 
 

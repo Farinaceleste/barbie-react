@@ -7,14 +7,21 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Contacto from "./pages/Contacto/Contacto";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import Checkout from "./checkout/Checkout";
-import User from "./user/User";
+import Cart from "./components/cart/Cart";
+import Auth from "./components/auth/Auth";
+import { CartProvider } from "./components/context/CartContext";
+import WishList from "./components/wishlist/WishList";
+import CartItem from "./components/cartitem/CartItem";
 
 
 function App() {
+
+
+
   return (
     <div>
       <BrowserRouter>
+        <CartProvider>
         <nav>{<NavBar/>}</nav>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -23,11 +30,14 @@ function App() {
           <Route path="/categoria/:categoryId" element = {<ItemListContainer/>}/>
           <Route path = "/item/:itemId" element = {<ItemDetailContainer/>}/>
           <Route path = "/contacto" element = {<Contacto/>}/>
-          <Route path = "/checkout" element = {<Checkout/>}/>
-          <Route path = "/user" element = {<User/>}/>
-           
+          <Route path = "/cart" element = {<Cart/>}/>
+          <Route path = "/auth" element = {<Auth/>}/>
+          <Route path = "/wishlist" element = {<WishList/>}/>
+
+          <Route path = "/cartitem" element = {<CartItem/>}/>
         </Routes>
         <footer>{<Footer />}</footer>
+        </CartProvider>
       </BrowserRouter>
     </div>
   )

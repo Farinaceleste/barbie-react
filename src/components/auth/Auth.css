@@ -1,0 +1,71 @@
+.sumate-titulo {
+    font-size: 24px;
+    margin-bottom:30px;
+}
+
+.auth-sumate {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-usuario {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap:25px;
+    justify-content: center;
+    width: 30%;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:25px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.redes img {
+    width: 25px;
+}
+
+.menu-derecho {
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+.botones-ingresar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.btn {
+    padding: 10px;
+    border-color: white;
+    cursor: pointer;
+    font-size: 15px;
+
+    &:hover {
+        background-color: pink;
+        color:black;
+    }
+}
+
+.btn img {
+    &:hover {
+        background-color: pink;
+        color:black;
+    }
+}
+
+.usuario-page {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
