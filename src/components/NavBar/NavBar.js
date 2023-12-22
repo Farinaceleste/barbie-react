@@ -1,14 +1,11 @@
 import "./NavBar.css";
 import Logo from "./logo.png";
 import React from "react";
-import "bulma/css/bulma.css";
 import { Link } from "react-router-dom";
 import UserPhoto from "./user.svg";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import CartWidget from "../CartWidget/CartWidget";
-
-
 
 
 function NavBar() {
@@ -20,7 +17,7 @@ function NavBar() {
         <div>
             <nav className="navbar">
                 <div className="imagen-logo-nav">
-                    <a href="./"><img src={Logo} alt="logo" /></a>
+                    <a href="./"><img className="imagen-logo-nav" src={Logo} alt="logo" /></a>
                 </div>
                 <ul className="lista-nav">
                     <li> <Link to="./" className="item-navbar">Home</Link></li>

@@ -1,4 +1,4 @@
-import "bulma/css/bulma.css";
+// import "bulma/css/bulma.css";
 import "./Contacto.css";
 import Swal from "sweetalert2";
 

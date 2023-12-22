@@ -1,7 +1,7 @@
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer"
 import './App.css';
-import "bulma/css/bulma.css";
+// import "bulma/css/bulma.css";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
