@@ -2,9 +2,7 @@ import "./NavBar.css";
 import Logo from "./logo.png";
 import React from "react";
 import "bulma/css/bulma.css";
-
 import { Link } from "react-router-dom";
-import Heart from "./heart.svg";
 import UserPhoto from "./user.svg";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
@@ -31,7 +29,7 @@ function NavBar() {
                 </ul>
                 <div className="iconos-header">
 
-                    <a href="/wishlist"><img className="container-cart-icon" src={Heart} alt="cart" /></a>
+                  
                     <a href="/auth" ><img className="container-cart-icon" src={UserPhoto} alt="user" /></a>
                     <div className="container-cart-icon">
                       <CartWidget/>

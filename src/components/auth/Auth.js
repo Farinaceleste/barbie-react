@@ -50,7 +50,7 @@ function Auth() {
                     </div>
                     <div className="botones-ingresar">
                         <button type="button" className="btn btn-light" onClick={logOut}>Cerrar sesión</button>
-                        <button type ="button" className= "btn btn-light" onClick={signUp}>Registrate</button>
+                        <button type ="submit" className= "btn btn-light" onClick={signUp}>Registrate</button>
                     </div>
                     <button type="button" className="btn btn-light" onClick={signInWithGoogle}>Ingresar con <img src={google} alt="google" /></button>
                 </div>

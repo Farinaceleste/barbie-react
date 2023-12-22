@@ -4,26 +4,17 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    margin-left: 20px;
+  flex-wrap: wrap;
     margin-top: 20px;
 }
 
 
-.botones-izquierda {
+.botones-checkout {
     display: flex;
-    justify-content: left;
-    margin-left: 20px;
-    margin-top:20px;
-    align-items: center;
-    
-}
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 22px;
 
-.botones-derecha {
-    display: flex;
-    justify-content: right;
-    margin-right: 20px;
-    align-items: center;
-    
    
 }
 
@@ -42,5 +33,18 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    margin-left: 70px;
 }
 
+.boton-cart {
+    font-size: 20px;
+    &:hover {
+        background-color: pink;
+        color:black;
+    }
+}
+
+.nuevo {
+    display: flex;
+
+}

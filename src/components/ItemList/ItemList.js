@@ -1,7 +1,7 @@
 import "./ItemList.css";
 import Item from "../Item/Item";
 
-const ItemList = ({items, handleAddToWishlist }) => {
+const ItemList = ({items}) => {
 
     if (!items) {
         return <h1>Loading...</h1>;
@@ -10,7 +10,7 @@ const ItemList = ({items, handleAddToWishlist }) => {
 
     return (
         <div className="ListGroup">
-            {items.map(prod => <Item key={prod.id} {...prod} handleAddToWishlist={handleAddToWishlist} />)}
+            {items.map(prod => <Item key={prod.id} {...prod}  />)}
         </div>
     )
 }

@@ -10,8 +10,9 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import Cart from "./components/cart/Cart";
 import Auth from "./components/auth/Auth";
 import { CartProvider } from "./components/context/CartContext";
-import WishList from "./components/wishlist/WishList";
 import CartItem from "./components/cartitem/CartItem";
+import Checkout from "./components/checkout/Checkout";
+
 
 
 function App() {
@@ -32,8 +33,7 @@ function App() {
           <Route path = "/contacto" element = {<Contacto/>}/>
           <Route path = "/cart" element = {<Cart/>}/>
           <Route path = "/auth" element = {<Auth/>}/>
-          <Route path = "/wishlist" element = {<WishList/>}/>
-
+          <Route path = "/checkout" element = {<Checkout/>}/>
           <Route path = "/cartitem" element = {<CartItem/>}/>
         </Routes>
         <footer>{<Footer />}</footer>

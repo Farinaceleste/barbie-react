@@ -9,13 +9,9 @@ const Item = ({ id, titulo, imagen, precio, stock, handleAddToWishlist }) => {
 
     const [active, setActive] = useState(false);
 
-    const addToWishlist = () => {
-        handleAddToWishlist({ id, titulo, imagen });
-    }
 
-    const handleIconClick = () => {
-        setActive(!active);
-    };
+
+
 
 
 
@@ -25,11 +21,7 @@ const Item = ({ id, titulo, imagen, precio, stock, handleAddToWishlist }) => {
                 <header className="header">
                     <h2 className="ItemHeader">
                         {titulo}
-                        <button onClick={addToWishlist}>
-                        <FaRegHeart className="heart-empty" onClick={handleIconClick} style={{
-                            backgroundColor: active ? "yellow" : "white",
-                        }} />
-                    </button>
+                        
                 </h2>
             </header>
             <picture>

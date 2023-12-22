@@ -24,7 +24,7 @@ const Cart = () => {
         updateVisibility();
     }
 
-    
+
     const updateVisibility = () => {
         if (totalQuantity === 0) {
             setVisibility({ icon: false, emptyMessage: true, empty: false });
@@ -35,14 +35,14 @@ const Cart = () => {
 
     useEffect(() => {
         updateVisibility();
-     }, [totalQuantity]);
+    }, [totalQuantity]);
 
     return (
         <div>
             <div className="card-checkout">
 
                 {cart.map(p => (
-                    <div key={p.id}>
+                    <div className="nuevo" key={p.id}>
                         <CartItem key={p.id} {...p} />
                         <button ref={iconRef} className="empty-icon" onClick={() => removeItem(p.id)}><img src={Trash} alt="trash" /></button>
                     </div>
@@ -54,14 +54,12 @@ const Cart = () => {
                 <hr />
 
             </div>
+            <hr />
             <div className="botones-checkout">
 
-                <div className="botones-derecha">
-                <button style={{ visibility: visibility.empty ? "visible" : "hidden" }} ref={emptyRef} className="empty" onClick={() => botonComprar()}>Comprar</button>
-                </div>
-            </div>
-            <div className="botones-izquierda">
-                <button> <Link to="/producto:productoId" className="boton-volver">Volver</Link></button>
+                <button> <Link to="/producto:productoId" className="boton-cart">Volver</Link></button>
+                <button> <Link to="/checkout" className="boton-cart"> Checkout </Link></button>
+
             </div>
         </div >
 

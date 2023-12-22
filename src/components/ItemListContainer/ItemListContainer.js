@@ -4,7 +4,6 @@ import ItemList from "../ItemList/ItemList";
 import { db } from "../config/firebase";
 import { getDocs, collection, where, query } from "firebase/firestore";
 import { NavLink, useParams } from "react-router-dom";
-import wishlist from "../wishlist/WishList";
 
 
 const ItemListContainer = ({ greeting }) => {
@@ -12,12 +11,12 @@ const ItemListContainer = ({ greeting }) => {
   const [loading, setLoading] = useState(true)
   const [products, setProducts] = useState([])
   const { categoryId } = useParams()
+
   const [wishlist, setWishlist] = useState([]);
 
-  
   const handleAddToWishlist = (product) => {
     setWishlist([...wishlist, product]);
-};
+  };
 
   useEffect(() => {
     setLoading(true)
@@ -57,12 +56,9 @@ const ItemListContainer = ({ greeting }) => {
           <NavLink to={'/producto:productoId'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ver todos</NavLink>
         </div>
         <section>
-          <ItemList items={products} />
-          <div className="App">
-            <wishlist wishlist={wishlist} />
-            <ItemList handleAddToWishlist={handleAddToWishlist} />
-          </div>
-        </section>
+        <ItemList items={products} handleAddToWishlist={handleAddToWishlist} />
+      
+      </section>
 
       </div>
     </div>
