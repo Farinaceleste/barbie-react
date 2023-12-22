@@ -3,6 +3,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: white;
     align-items: center;
+    margin-bottom: 15px;
+    justify-items: center;
 
 }
 
@@ -14,6 +16,11 @@
 
 
 li {
-    font-weight: bold;
+    
     cursor: pointer;
+    list-style:none;
+    text-decoration: none;
+    gap:10px;
+    padding: 3px;
+   
 }

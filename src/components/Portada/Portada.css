@@ -3,6 +3,7 @@
 
 .portada {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
  
@@ -16,30 +17,37 @@
     color:#DA1884;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
     align-content: center;
     justify-content: center;
     align-items: center;
     gap:-2px;
 }
+.imagen-portada-div {
+    display: flex;
+    align-items: center;
+}
+
 
 .imagen-portada {
-    width: 100%;
+    max-width: 700px;
+    height: fit-content;
     overflow:visible;
     background-color: transparent;
 }
 
 .letra-logo {
-    width:70x;
+    width:400px;
     padding: 20px;
 }
 
 .cards-portada {
     display: grid;
-    width: 100%;
+    max-width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 25px;
     gap:25px;
     justify-content: center; 
 }
@@ -49,24 +57,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(255, 180, 244);
     color:#DA1884;
     gap:30px;
-    width: 100%;
-    height: auto;
-   
-    &:hover {
-        background-color:#DA1884;
-        color:aliceblue;
-    }
+    /* width: 100%; */
+    height: 615px;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+ 
 }
 
-.imagen-card img {
+.imagen-card  {
   
         position: relative;
-        width: 20%;
-        height: auto; 
+        width: 100%;
+        height: 450px; 
         overflow: hidden; 
+        object-fit:contain;
 }
 
 .texto-card {

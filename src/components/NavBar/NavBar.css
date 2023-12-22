@@ -7,7 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 6;
-    width: 100%;
+    max-width: 100%;
     position: inline;
     padding: 25px;
   
@@ -18,17 +18,20 @@
     font-weight: bold;
     top:10% !important;
     background-color: transparent;
-    gap: 25px;
+    gap: 35px;
     font-size: x-large;
     align-items: center;
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
     
 }
 
 
 .imagen-logo-nav {
-    width: 130px;
+    width: 170px;
+    margin-left: 15px;
    
    
 }
@@ -91,11 +94,17 @@
 
 .item-navbar {
     color:#DA1884;
+    text-decoration: none;
+    list-style: none;
 }
 
 .CartImg {
     color:black;
 }
 
+a {
+    list-style: none;
+    text-decoration: none;
+}
 
 
