@@ -1,19 +1,11 @@
 import { Link } from "react-router-dom";
 import "./Item.css";
-
-import { FaRegHeart } from "react-icons/fa";
 import { useState } from "react";
 
 
-const Item = ({ id, titulo, imagen, precio, stock, handleAddToWishlist }) => {
+const Item = ({ id, titulo, imagen, precio, stock}) => {
 
-    const [active, setActive] = useState(false);
-
-
-
-
-
-
+ 
 
     return (
         <div className="card-item">

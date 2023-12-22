@@ -10,7 +10,7 @@ const ItemList = ({items}) => {
 
     return (
         <div className="ListGroup">
-            {items.map(prod => <Item key={prod.id} {...prod}  />)}
+            {items.map(prod => <Item key={prod.id} {...prod} titulo={prod.titulo} precio={prod.precio} imagen={prod.imagen}  />)}
         </div>
     )
 }

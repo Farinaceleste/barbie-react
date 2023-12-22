@@ -12,11 +12,6 @@ const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([])
   const { categoryId } = useParams()
 
-  const [wishlist, setWishlist] = useState([]);
-
-  const handleAddToWishlist = (product) => {
-    setWishlist([...wishlist, product]);
-  };
 
   useEffect(() => {
     setLoading(true)
@@ -43,6 +38,8 @@ const ItemListContainer = ({ greeting }) => {
   }, [categoryId]);
 
 
+  console.log(products)
+
 
 
   return (
@@ -56,7 +53,8 @@ const ItemListContainer = ({ greeting }) => {
           <NavLink to={'/producto:productoId'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ver todos</NavLink>
         </div>
         <section>
-        <ItemList items={products} handleAddToWishlist={handleAddToWishlist} />
+
+        <ItemList items={products} />
       
       </section>
 

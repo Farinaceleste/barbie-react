@@ -10,15 +10,15 @@ const Checkout = () => {
     
     const [pedidoId, setPedidoId] = useState("");
 
-    const { carrito, precioTotal, vaciarCarrito } = useContext(CartContext);
+    const { cart, totalPrice, removeItem } = useContext(CartContext);
 
     const { register, handleSubmit } = useForm();
 
     const comprar = (data) => {
         const pedido = {
             cliente: data,
-            productos: carrito,
-            total: precioTotal()
+            productos: cart,
+            total: totalPrice()
         }
         console.log(pedido);
 
@@ -27,7 +27,7 @@ const Checkout = () => {
         addDoc(pedidosRef, pedido)
             .then((doc) => {
                 setPedidoId(doc.id);
-                vaciarCarrito();
+                removeItem();
             })
 
     }

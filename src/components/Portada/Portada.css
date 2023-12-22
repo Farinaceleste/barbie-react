@@ -35,9 +35,9 @@
 }
 
 .cards-portada {
-    display: flex;
+    display: grid;
     width: 100%;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     padding: 20px;
     gap:25px;
@@ -70,7 +70,7 @@
 }
 
 .texto-card {
-    font-size: 50px;
+    font-size: 30px;
     padding: 20px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
