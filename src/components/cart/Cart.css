@@ -4,8 +4,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 20px;
+    align-items: center;
 }
 
 
@@ -35,6 +36,7 @@
     border: none;
     cursor: pointer;
     margin-left: 70px;
+    width: 70spx;
 }
 
 .boton-cart {
@@ -48,4 +50,12 @@
 .nuevo {
     display: flex;
 
+}
+
+.empty-message {
+    display: none;
+}
+
+.invisible {
+    display: block;
 }

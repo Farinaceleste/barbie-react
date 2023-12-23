@@ -53,7 +53,7 @@ function Contacto() {
             </div>
 
             <div className="field">
-                <div className="control">
+                <div className="label">
                     <label className="checkbox">
                         <input type="checkbox" aria-required="true"/>
                             Acepto los términos y condiciones
@@ -63,10 +63,10 @@ function Contacto() {
 
             <div className="field is-grouped">
                 <div className="control">
-                    <button onClick={aceptarContacto} className="button is-link">Enviar</button>
+                    <button onClick={aceptarContacto} className="button">Enviar</button>
                 </div>
                 <div className="control">
-                    <button className="button is-link is-light">Cancelar</button>
+                    <button className="button">Cancelar</button>
                 </div>
             </div>
         </div>

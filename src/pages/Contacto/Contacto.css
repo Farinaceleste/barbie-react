@@ -2,7 +2,28 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin:30px;
-    width: 50%;
+    margin:20px;
+    gap:15px;
+    padding: 25px;
+    align-items: center;
    
+  
+   
+}
+
+.button {
+    gap:25px;
+    padding: 7px;
+    margin:7px;
+    font-weight: bold;
+
+
+    &:hover {
+        background-color: #c3577e;
+    }
+}
+
+.textarea {
+    width:185px;
+    height: 200px;
 }

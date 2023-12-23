@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap:30px;
    
     
 }
@@ -18,7 +19,8 @@
 }
 
 .titulos-cart {
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 20px;
     padding: 20px;
 }
 

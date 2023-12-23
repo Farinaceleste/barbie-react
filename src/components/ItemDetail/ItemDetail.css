@@ -33,3 +33,15 @@ h1 {
     gap: 25px;
     
 }
+
+.Option {
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+
+    &:hover {
+        background-color:#c3577e;
+    }
+
+    font-weight: bold;
+}

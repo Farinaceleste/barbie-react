@@ -16,8 +16,8 @@
     flex-direction: column;
     color:#DA1884;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 50px;
+
+    font-size: 36px;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -38,7 +38,7 @@
 
 .letra-logo {
     width:400px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .cards-portada {

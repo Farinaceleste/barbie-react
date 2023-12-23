@@ -48,6 +48,7 @@ const ItemListContainer = ({ greeting }) => {
       <div className="org-tienda">
         <div className="Categorias">
           <h1>Filtrar</h1>
+          
           <NavLink to={'/categoria/barbie'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Barbie</NavLink>
           <NavLink to={'/categoria/ken'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ken</NavLink>
           <NavLink to={'/producto:productoId'} className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}>Ver todos</NavLink>

@@ -1,4 +1,4 @@
-
+import "./checkout.css";
 import React, { useContext, useState } from 'react'
 import { CartContext } from '../context/CartContext';
 import { useForm } from 'react-hook-form';
@@ -35,7 +35,7 @@ const Checkout = () => {
     if (pedidoId) {
         return (
             <div className="container">
-                <h1 className="main-title">Muchas gracias por tu compra</h1>
+                <h1 className="main-title">¡Muchas gracias por tu compra!</h1>
                 <p>Tu número de pedido es: {pedidoId}</p>
             </div>
         )
